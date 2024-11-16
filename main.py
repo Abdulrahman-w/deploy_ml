@@ -51,6 +51,6 @@ def preprocessing(input_features: InputFeatures):
 async def predict(input_features: InputFeatures):
     data = preprocessing(input_features)
     y_pred = model.fit_predict(data)
-    return {"pred": y_pred.tolist()[0]}
+    return {"Prediction Your Cluster": y_pred.tolist()[0]}
  
 
