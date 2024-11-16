@@ -6,8 +6,8 @@ import joblib
 from pydantic import BaseModel
 
 
-model = joblib.load("C:/Users/User/Desktop/Tuwaiq Assignmets/Usecase - Lab/Usecase-7/ML_Deploy/DBSCAN_model.joblib","r")
-scaler = joblib.load("C:/Users/User/Desktop/Tuwaiq Assignmets/Usecase - Lab/Usecase-7/ML_Deploy/scaler.joblib","r")
+model = joblib.load("DBSCAN_model.joblib","r")
+scaler = joblib.load("scaler.joblib","r")
 
 app = FastAPI()
 
